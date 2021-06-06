@@ -1,8 +1,7 @@
 version: '3'
 services:
   mirai:
-    #image: sttot/mirai
-    build: ./
+    image: sttot/mirai:latest
     restart: always
     privileged: true
     tty: true
