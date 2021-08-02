@@ -13,7 +13,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
     && java -jar /mirai/mcl.jar --update-package net.mamoe:mirai-core-all \
     && java -jar /mirai/mcl.jar --update-package net.mamoe:chat-command --channel stable --type plugin \
     && java -jar /mirai/mcl.jar --update-package net.mamoe:mirai-api-http --channel stable --type plugin \
-    && java -jar /mirai/mcl.jar --update-package net.mamoe:mirai-login-solver-selenium --channel nightly --type plugin \
+    && java -jar /mirai/mcl.jar --update-package org.itxtech:mcl-addon --channel stable --type plugin \
     && rm /root/init.sh /root/mcl-1.2.1.zip \
     && apk del tzdata expect
 CMD ["java", "-jar", "mcl.jar"]
