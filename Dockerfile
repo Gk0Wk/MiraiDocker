@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk17:alpine-slim
+FROM adoptopenjdk/openjdk16:alpine-slim
 ARG Asia/Shanghai
 WORKDIR /mirai
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
